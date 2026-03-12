@@ -12,10 +12,11 @@ NextHonoBoot 以「前后端一体 + 类型安全 + 后台基础能力完备」�
 
 ## 主要能力
 
-- JWT 认证与 RBAC 权限控制
-- 请求上下文、结构化日志、审计日志
-- CRUD 路由与 React Query Hooks 工厂
+- 服务端会话认证、RBAC 权限（菜单/按钮）
+- 请求级上下文、结构化日志、审计日志
+- CRUD 路由工厂 + React Query Hooks 工厂
 - MySQL + Drizzle ORM 类型安全数据层
+- 统一错误处理 + OpenTelemetry 接入（可选）
 - Docker 化部署与运行时环境校验
 
 ## 技术栈
@@ -42,8 +43,8 @@ pnpm install
 - `DATABASE_CONNECT_TIMEOUT`
 - `AUTO_DB_MIGRATE`
 - `AUTO_DB_SEED`
-- `JWT_SECRET`
-- `JWT_EXPIRES_IN`
+- `SESSION_COOKIE_NAME`
+- `SESSION_TTL_DAYS`
 - `NODE_ENV`
 
 推荐做法：
